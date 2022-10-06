@@ -1,0 +1,13 @@
+.home-client {
+	padding-bottom: 75px;
+	padding-top: 75px;
+	.slick-slide {
+		img {
+			display: initial;
+		}
+	}
+	@include bp(smx) {
+		padding-bottom: 50px;
+		padding-top: 50px;
+	}
+}

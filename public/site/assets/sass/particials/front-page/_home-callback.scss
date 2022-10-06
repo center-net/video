@@ -1,0 +1,28 @@
+.home-callback {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	padding-bottom: 65px;
+	padding-top: 65px;
+	position: relative;
+	z-index: 1;
+	.overlay {
+		background-color: rgba($secondary-color, 0.92);
+	}
+	* {
+		color: $light-color;
+	}
+	.section-title {
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+	.button-wrap {
+		text-align: right;
+	}
+	@include bp(smx) {
+		.button-wrap {
+			text-align: initial;
+			padding-top: 10px;
+		}
+	}
+}

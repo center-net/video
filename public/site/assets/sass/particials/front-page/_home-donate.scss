@@ -1,0 +1,43 @@
+.home-donate {
+	padding-bottom: 70px;
+	margin-bottom: 100px;
+	@include bp(smx) {
+		padding-bottom: 30px;
+		margin-bottom: 60px;
+	}
+}
+.donate-inner {
+	padding-top: 20px;
+	.row {
+		@include bp(lg){
+			margin-right: -15px;
+			margin-left: -15px;
+			>* {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+		}
+	}
+	.donate-content {
+		@include border-radius(25px);
+		color: $light-color;
+		padding: 50px;
+		margin-bottom: 30px;
+		h3 {
+			@include flexbox();
+			@include align-items(center);
+			color: $light-color;
+			margin-bottom: 35px;
+			i {
+				font-size: 70px;
+				margin-right: 20px;
+			}
+		}
+		p {
+			margin-bottom: 35px;
+		}
+	}
+	@include bp(smx) {
+		padding-top: 0;
+	}
+}

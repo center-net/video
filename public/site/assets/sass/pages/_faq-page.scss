@@ -1,0 +1,97 @@
+.faq-page-container {
+	padding-bottom: 80px;
+	.faq-content-wrap {
+		@include bp(lg) {
+			padding-left: 20px;
+		}
+	}
+	.section-head {
+		p {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.qsn-form-container {
+	background-color: $primary-color;
+	@include border-radius(25px);
+	padding: 40px 30px 20px;
+	color: $light-color;
+	text-align: center;
+	h3 {
+		background-color: $secondary-color;
+		@include border-radius(25px);
+		color: $light-color;
+		padding: 8px 0 10px;
+	}
+	p {
+		margin-bottom: 20px;
+	}
+	form {
+		padding-top: 10px;
+		text-align: left;
+	}
+	input {
+		&:not([type="submit"]) {
+			min-height: 59px;
+			width: 100%;
+		}
+		&:not[type="submit"] {
+			height: 59px;
+		}
+		&[type="submit"] {
+			border: 2px solid $light-color;
+			color: $light-color;
+			@include transition(all 0.4s);
+			&:hover {
+				border-color: $hover-color;
+			}
+		}
+	}
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+
+	/* Firefox */
+	input[type=number] {
+	  -moz-appearance: textfield;
+	  appearance: textfield;
+	}
+	@include bp(lg) {
+		margin-left: 40px;
+	}
+	@include bp(lgx) {
+		margin-top: 40px;
+	}
+}
+.faq-testimonial {
+	.faq-image {
+		img {
+			@include border-radius(25px);
+			width: 100%;
+		}
+	}
+	.testimonial-content {
+		background-color: $primary-color;
+		color: $light-color;
+		margin-right: 25px;
+		margin-top: -100px;
+		padding: 30px;
+		position: relative;
+		i {
+			font-size: 40px;
+		    margin-bottom: 12px;
+		    line-height: 1;
+		}
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	@include bp(lgx) {
+		margin-bottom: 40px;
+	}
+}

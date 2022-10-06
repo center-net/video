@@ -1,0 +1,163 @@
+.career-detail-section {
+	.career-detail-inner {
+		padding-bottom: 50px;
+	}
+	.job-description {
+		background-color: $primary-color;
+		@include border-radius(25px);
+		overflow: hidden;
+		ul {
+			margin: 0;
+			padding: 0;
+			@include flexbox();
+			@include flex-wrap(wrap);
+			text-align: center;
+			padding: 24px 0;
+		}
+		li {
+			color: $light-color;
+			list-style: none;
+			display: inline-block;
+			padding: 0 8px;
+			width: 33.33%;
+			font-size: 16px;
+			font-weight: 600;
+			border-right: 2px solid rgba($light-color, 0.28);
+			h4 {
+				color: $light-color;
+				margin-bottom: 0;
+			}
+			&:last-child {
+				border-right: none;
+			}
+		}
+		@include bp(smx) {
+			li {
+				width: 100%;
+				border-right: none;
+				border-bottom: 1px solid rgba($light-color, 0.28);
+				padding: 10px 0;
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+	@include bp(lg) {
+		.career-detail-container {
+			padding-left: 20px;
+		}
+	}
+}
+
+.sidebar {
+	.widget-bg {
+		background-color: #F8F8F8;
+		border-bottom: 3px solid $primary-color;
+		@include border-radius(25px);
+		margin-bottom: 50px;
+		padding: 30px;
+		.bg-title {
+			background-color: $secondary-color;
+			@include border-radius(25px);
+			color: $light-color;
+			padding: 10px;
+			text-align: center;
+			margin-bottom: 25px;
+		}
+	}
+	.sidebar-list {
+		ul {
+			padding: 0;
+			margin: 0;
+		}
+		li {
+			list-style: none;
+			margin-bottom: 8px;
+			i {
+				color: $secondary-color;
+				margin-right: 10px;
+				font-size: 14px;
+			}
+		}
+	}
+	.faq-widget {
+		.accordion {
+			.card {
+				button {
+					font-size: 15px;
+					font-weight: 600;
+					padding: 18px;
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+	.widget-icon {
+		background-color: $primary-color;
+		border-radius: 100%;
+		color: $light-color;
+		height: 100px;
+		width: 100px;
+		text-align: center;
+		line-height: 100px;
+		font-size: 48px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+	.or-style {
+		color: $primary-color;
+		display: table;
+		font-size: 18px;
+		font-weight: 400;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 70px;
+		padding-right: 70px;
+		margin-bottom: 20px;
+		&:before,
+		&:after {
+			background-color: #d1d1d1;
+			content: "";
+			width: 60px;
+			height: 1px;
+			position: absolute;
+			top: 50%;
+			display: inline-block;
+		}
+		&:before {
+			left: 0;
+		}
+		&:after {
+			right: 0;
+		}
+	}
+	.upload-widget {
+		.button-primary {
+			margin-top: 20px;
+		}
+	}
+}
+
+.secondary-callback {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 80px 0;
+	position: relative;
+	z-index: 1;
+	.heading-inner {
+		background-color: rgba($secondary-color, 0.7);
+		@include border-radius(25px);
+		color: $light-color;
+		padding: 50px;
+		h2 {
+			color: $light-color;
+		}
+		.button-round {
+			margin-top: 15px;
+		}
+	}
+}

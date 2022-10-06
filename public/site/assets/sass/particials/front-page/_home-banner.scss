@@ -1,0 +1,75 @@
+.home-banner {
+	@include background(size, cover);
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-bottom: 125px;
+	padding-top: 230px;
+	position: relative;
+	z-index: 1;
+	.overlay {
+		background-color: rgba(#151515, 0.55);
+	}
+	@include bp(smx) {
+		padding-top: 200px;
+		padding-bottom: 70px;
+	}
+}
+.banner-content {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 1;
+	.banner-title {
+		@include font-size(80);
+		color: $light-color;
+		line-height: 1.1;
+		font-weight: 900;
+		margin-bottom: 30px;
+	}
+	.banner-text {
+		p {
+			color: $light-color;
+			margin-bottom: 45px;
+			font-size: 18px;
+		}
+	}
+	.banner-button {
+		margin-left: -10px;
+		margin-right: -10px;
+		a {
+			margin: 10px;
+		}
+	}
+	@include bp(lgx) {
+		.banner-title {
+			@include font-size(50);
+		}
+	}
+	@include bp(mdx) {
+		.banner-title {
+			@include font-size(45);
+		}
+	}
+	@include bp(smx) {
+		.banner-title {
+			@include font-size(32);
+		}
+		.banner-text {
+			p {
+				font-size: 16px;
+			}
+		}
+		.banner-button {
+			margin-left: -5px;
+			margin-right: -5px;
+			@include flexbox();
+			@include flex-wrap(wrap);
+			a {
+				padding: 10px 15px;
+				text-align: center;
+				margin: 5px;
+				@include flex-grow(1);
+			}
+		}
+	}
+}
